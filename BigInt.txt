@@ -1,0 +1,42 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+public class Main {
+   
+   
+   static BigInteger factorial(int n)
+   {
+      // Scanner sc1 = new Scanner(System.in);
+       //int s2 = sc1.nextInt();
+       
+       BigInteger f = new BigInteger("1");
+       for(int i=n; i>1; i--)
+       {
+           //f = f*i;
+           f = f.multiply(BigInteger.valueOf(i));
+           
+       }
+       return f;
+       
+       
+   }
+   
+   
+   static void playInt()
+   {
+       Scanner sc = new Scanner(System.in);
+       int s1 = sc.nextInt();
+       
+       System.out.println(s1);
+       BigInteger b1 = new BigInteger("1");
+       BigInteger b2 = new BigInteger("12345");
+       
+       BigInteger b3 = b1.add(b2);
+       System.out.println(b3);
+   }
+    public static void main(String args[]) {
+       // System.out.println("Hello World!");
+       //playInt();
+       System.out.println(factorial(8));
+       
+    }
+}
